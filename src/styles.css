@@ -206,22 +206,20 @@ body{
 }
 
 #deals .deals-images {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     width: 50vw;
     margin: auto;
     justify-content: space-between;
 }
 
-#deals .img-item1, .img-item2, .img-item3{
+#deals .img-item{
+    position: relative;
     width: 200px;
     height: 270px;
     border-radius: 20px;
     margin-left: 20px;
-}
-
-#deals .img-item1{
-    background-image: url("./image/inside-airplane.jpg");
+    z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -229,31 +227,63 @@ body{
     box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
     -webkit-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
     -moz-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    
+    transition: transform 0.6s;
 }
 
-#deals .img-item2{
-    background-image: url("./image/hotel2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    -webkit-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    -moz-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    
+#deals .img-item .details{
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    text-align: left;
+    border-radius: 0 10px 10px 0;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.6s;
 }
 
-#deals .img-item3{
-    background-image: url("./image/hotel1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    -webkit-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    -moz-box-shadow: 2px -55px 54px -25px rgba(0,0,0,0.83) inset;
-    
+#deals .img-item:hover .details{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+#deals .img-item:nth-child(1):hover ~ .img-item{
+    transform: translateX(200px);
+}
+ 
+#deals .img-item:nth-child(2):hover ~ .img-item:nth-child(3){
+    transform: translateX(200px);
+}
+
+
+#deals .img-item .details h3{
+    margin: 25px 0 0 10px;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+#deals .img-item .details p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #4e4e4e;
+    margin: 10px;
+}
+#deals .img-item .details .learn{
+    background-color: #8cb8d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#deals .img-item .details .learn:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
 }
 
 #deals .deals-images span{
@@ -431,6 +461,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    transition: 0.4s;
+}
+
+#hotels .hotel-images .hotel-item:hover{
+    transform: scale(1.1);
 }
 
 #hotels .hotel-images .hotel-item .hotel-title{
@@ -605,7 +640,7 @@ body{
     background-position: center;
     width: 100%;
     height: 100%;
-    transition: box-shadow 0.3s;
+    transition: all 0.5s;
 }
 
 #places .container .place-item:nth-of-type(1){
@@ -634,8 +669,8 @@ body{
     left: 10px;
     text-align: left;
     line-height: 0.5;
-    display: none;
-    transition: all 0.3s;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 #places .container .place-item .caption h4{
@@ -657,7 +692,7 @@ body{
 }
 
 #places .container .place-item:hover .caption{
-    display: block;
+    opacity: 1;
 }
 
 #footer .newsletter {
