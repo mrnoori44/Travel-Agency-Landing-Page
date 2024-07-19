@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4edf28a6b4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header id="header">
+
+        <nav id="navbar">
+
+            <span id="logo">Travel agency.</span>
+
+            <ul id="menu">
+                <li>Flights</li>
+                <li>Hotels</li>
+                <li>Trains</li>
+                <li>Tours</li>
+                <li>Cabs</li>
+            </ul>
+
+            <button id="sign-in">Sign In</button>
+        </nav>
+
+        <div id="poster">
+            <p class="poster-text">READY TAKE-OFF</p>
+            <h1 class="poster-title">CONVENIEN ONLINE <br>
+                FLIGHT BOOKING SERVICES</h1>
+            <img src="./image/airplane7.png" alt="airplane" class="poster-image">
+        </div>
+
+        <div id="search-box">
+            <div class="options">
+                <button>One Way</button>
+                <button>Round Trip</button>
+                <button>Multi City</button>
+            </div>
+
+            <form action="#" class="search-flight">
+                <div class="select-box">
+                    <label for="from">From</label>
+                    <select name="source" id="from">
+                        <option value="Tehran">Tehran, Iran</option>
+                        <option value="Tokyo" selected>Tokyo, Japan</option>
+                        <option value="Newyork">Newyork, USA</option>
+                        <option value="London">London, UK</option>
+                    </select>
+                </div>
+                <div class="select-box">
+                    <label for="to">To</label>
+                    <select name="destination" id="to">
+                        <option value="Berlin">Berlin, Germany</option>
+                        <option value="Beijing">Beijing, China</option>
+                        <option value="Rome">Rome, Italy</option>
+                        <option value="Paris">Paris, France</option>
+                    </select>
+                </div>
+                <div class="select-box">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" value="2024-06-17" min="2024-06-01" max="2024-12-20">
+                </div>
+                <div class="select-box">
+                    <label for="return">Return</label>
+                    <input type="date" id="return" value="2024-07-01" min="2024-06-02" max="2025-12-20">
+                </div>
+                <button type="submit" class="sub-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+
+    </header>
+
+    <section id="deals">
+        <h2 class="title">TOP FLIGHT DEALS</h2>
+        <p class="sub-title">Discover top flight deals for entire travel experiences at <br> unprecedented prices. </p>
+
+        <div class="deals-images">
+            <div class="img-item1"><span>DTOUR2023</span></div>
+            <div class="img-item2"><span>HOTEL BOOKING</span></div>
+            <div class="img-item3"><span>BOOK DOMESTIC</span></div>
+    </section>
+
+    <section id="services">
+        <h2 class="title">OUR SERVICE</h2>
+        <p class="sub-title">Flight services offer convenient travel, connecting people worldwide <br> with ease.
+        </p>
+
+        <div class="services-box">
+
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-briefcase"></i></span>
+                <h3 class="item-title">BAGS FLY FREE</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-wifi"></i></span>
+                <h3 class="item-title">GATE TO GATE WIFI</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-plane-up"></i></span>
+                <h3 class="item-title">FLY IN COMFORT</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                <h3 class="item-title">NO CHANGE FEES</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-briefcase"></i></span>
+                <h3 class="item-title">BAGS FLY FREE</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+            <div class="services-item">
+                <span class="service-icon"><i class="fa-solid fa-plane-up"></i></span>
+                <h3 class="item-title">FLY IN COMFORT</h3>
+                <p class="item-text">our services is for your convenience flight experience.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="airlines">
+        <h2 class="title">MOST POPULAR AIRLINES</h2>
+        <p class="sub-title">The world leading airlines offer top-notch services, ensuring <br> memorable travel
+            experiences for passengers.</p>
+
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <button id="prev" class="slider-button"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="image-list">
+                    <div data-img-url="./image/turkish.jpg" class="image-item">
+                        <h3 class="image-title">TURKISH AIRLINE</h3>
+                    </div>
+                    <div data-img-url="./image/Qatarair.jpg" class="image-item">
+                        <h3 class="image-title">QATAR AIRWAYS</h3>
+                    </div>
+                    <div data-img-url="./image/Emirates.jpg" class="image-item">
+                        <h3 class="image-title">EMIRATES</h3>
+                    </div>
+                    <div data-img-url="./image/airplane1.jpeg" class="image-item">
+                        <h3 class="image-title">AIRLINE</h3>
+                    </div>
+                    <div data-img-url="./image/airplane2.jpg" class="image-item">
+                        <h3 class="image-title">AIRLINE</h3>
+                    </div>
+
+                </div>
+                <button id="next" class="slider-button"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="hotels">
+        <h2 class="title">BOOK YOUR HOTEL</h2>
+        <p class="sub-title">The world leading airlines offer top-notch services, ensuring <br> memorable travel
+            experiences for passengers.</p>
+
+        <div class="hotel-images">
+            <div data-img-url="./image/hotel4.jpg" class="hotel-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <p class="hotel-title">HOTEL TROPICAL DAISY</p>
+            </div>
+            <div data-img-url="./image/hotel2.jpg" class="hotel-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <p class="hotel-title">HOTEL PLAZA</p>
+            </div>
+            <div data-img-url="./image/hotel3.png" class="hotel-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <p class="hotel-title">HOTEL PLAZA NYC</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="faq-image">
+                <img src="./image/faq.png" alt="faq">
+            </div>
+            <div class="faq-box">
+                <h3 class="title">FREQUENTLY ASKED QUESTIONS</h3>
+                <p class="sub-title">Common FAQs address various topics concisly,easing <br>information retrieval for
+                    curious individuals.</p>
+
+                <div class="faq-item">
+                    <a class="faq-question">How do i book a flight?</a>
+                    <p class="faq-answer">By searching your desired flight with our website <br> you can easily book
+                        your ticket.</p>
+                </div>
+                <div class="faq-item">
+                    <a class="faq-question">What information do i need to book a flight?</a>
+                    <p class="faq-answer">Just your ID number and your passport information.</p>
+                </div>
+                <div class="faq-item">
+                    <a class="faq-question">Can i book a flight without a passport?</a>
+                    <p class="faq-answer">International flights requires passport, while domestic flights usually
+                        <br>accept government issued photo IDs.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <a class="faq-question">When should i book a flight to get the best deals?</a>
+                    <p class="faq-answer">You can chech our Top Deals section and book your flight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="places">
+        <h2 class="title">TOP VISITED PLACES</h2>
+        <p class="sub-title">Explore breadthtaking landscapes, historic sites, and vibrant <br> cities worldwide</p>
+
+        <div class="container">
+            <div data-img-url="./image/sydney.png" class="place-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <div class="caption">
+                    <h4>SYDNEY</h4>
+                    <p>The Opera House</p>
+                </div>
+            </div>
+            <div data-img-url="./image/india.jpg" class="place-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <div class="caption">
+                    <h4>INDIA</h4>
+                    <p>Taj Mahal Palace</p>
+                </div>
+            </div>
+            <div data-img-url="./image/paris.jpg" class="place-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <div class="caption">
+                    <h4>PARIS</h4>
+                    <p>The Eiffel Tower</p>
+                </div>
+            </div>
+            <div data-img-url="./image/niagara.jpg" class="place-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <div class="caption">
+                    <h4>CANADA</h4>
+                    <p>The Niagara Fall</p>
+                </div>
+            </div>
+            <div data-img-url="./image/liberty.jpg" class="place-item">
+                <span class="like"><i class="fa fa-heart-o" id="heart"></i></span>
+                <div class="caption">
+                    <h4>USA</h4>
+                    <p>Statue Of Liberty</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="newsletter">
+            <h2 class="title">SUBSCRIBE OUR NEWSLETTER</h2>
+            <p class="sub-title">Subscribe To Receive Our Interesting Updates.</p>
+
+            <img src="./image/airplane3.png" alt="" width="250px" height="150px" class="air-plane">
+            <form action="#">
+                <div class="input-container">
+                    <input type="email" name="email" id="user-email" placeholder="enter your email address">
+                    <button type="submit" class="subscribe">Subscribe</button>
+                </div>
+            </form>
+            <img src="./image/earth.png" alt="" width="400px" height="400px" class="earth">
+        </div>
+        <div class="footer-container">
+            <div class="address">
+                <span id="logo">Travel agency.</span>
+                <p><i class="fa fa-map-marker"></i>New York, USA</p>
+                <p><i class="fa fa-phone"></i>+12345669908</p>
+                <p><i class="fa fa-envelope"></i>travelagency@gmail.com</p>
+            </div>
+            <div class="top-dst">
+                <h4>Top Destination</h4>
+                <ul>
+                    <li>London</li>
+                    <li>New York</li>
+                    <li>Rome</li>
+                    <li>Paris</li>
+                    <li>Berlin</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Team Members</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h4>Download App</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, <br> expedita quod? Molestias vel
+                    officia.</p>
+                <img src="./image/appstore.png" alt="" width="100px" height="50px" style="padding: 8px;">
+                <img src="./image/googleplay.png" alt="" width="100px" height="50px">
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
